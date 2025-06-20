@@ -1,0 +1,25 @@
+# Smart Object Cropper 
+
+An AI-powered web application that automatically detects and crops the primary object (like faces over hands) from images using TensorFlow.js and COCO-SSD.
+
+## Features 
+
+- **Smart Object Detection**: Uses TensorFlow.js with COCO-SSD model
+- **Primary Object Selection**: Prioritizes faces/people over other objects
+- **Precise Cropping**: Accurately crops the detected object
+- **Visual Debugging**: Shows detection scores and selection criteria
+- **Responsive Design**: Works on both desktop and mobile devices
+
+## How It Works 
+
+1. Upload an image containing objects
+2. AI detects all objects using COCO-SSD model
+3. Smart algorithm selects the most important object based on:
+   - Object class (prioritizes faces/people)
+   - Detection confidence
+   - Size and position in the frame
+4. Crops and displays the selected object
+
+ #Process
+1. Simply open `index.html` in any modern browser
+
